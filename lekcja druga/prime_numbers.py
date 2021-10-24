@@ -1,16 +1,26 @@
 num = int(input("Please enter a number: "))
 
-x=1
+x=0
+
+y = 2
+
+prime_nums = 'Prime numbers: '
 
 while x<num-1:
     
-    x += 1
+    z=2
     
-    factor = num%x
+    if y==2:
+        prime_nums += str(y) + ' '
+    else:
+        while z<y:
+            if y%z==0:
+                break
+            z += 1
+        else:
+            prime_nums += str(y) + ' '
+            x+=1
+    y+=1
     
-    if factor==0:
-        print(f"{num} is not a prime number")
-        
-    elif x == num - 1:
-        print(f"{num} is a prime number")
     
+print(prime_nums)
