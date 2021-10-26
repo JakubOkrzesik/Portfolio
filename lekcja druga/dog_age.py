@@ -6,9 +6,12 @@ if human_age<0:
 
 dog_age = 0
 
+x = 1
+
 if human_age<=2:
-    while dog_age < 2:
+    while  x <= human_age:
         dog_age = dog_age + 10.5
+        x += 1
 else:
     dog_age = human_age*4 - 8 + 21
     

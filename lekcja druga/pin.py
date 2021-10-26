@@ -7,7 +7,7 @@ for y in range (3):
         Print("Pin correct. Payment has been processed")
         break
     
-    if x!=pin:
+    elif x!=pin:
         print("Incorrect")
         
     if y==2:
