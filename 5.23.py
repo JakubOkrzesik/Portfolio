@@ -5,7 +5,9 @@ import sort as bubblesort
 def median(array):
     
     n = len(array)
-
+    
+    array.sort()
+    
     if n%2==0:
         return (array[n/2]+array[n/2 - 1])/2
     
