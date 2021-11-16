@@ -1,12 +1,12 @@
 import math
-import sort as bubblesort
+from sort import bubblesort
 
 
 def median(array):
     
     n = len(array)
     
-    array.sort()
+    bubblesort(array)
     
     if n%2==0:
         return (array[n/2]+array[n/2 - 1])/2
